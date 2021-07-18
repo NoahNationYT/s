@@ -189,8 +189,7 @@ do
 			"ScreenGui",
 			{Name = game:GetService("HttpService"):GenerateGUID()},
 			{
-				utility:Create(
-					"ImageLabel",{ BorderSizePixel = 0,
+				utility:Create("ImageLabel" , { BorderSizePixel=0,
 						Name = "Main",
 						BackgroundTransparency = 0,
 						BackgroundColor3 = themes.Background,
@@ -202,8 +201,7 @@ do
 						SliceCenter = Rect.new(4, 4, 296, 296)
 					},
 					{
-						utility:Create(
-							"ImageLabel",{ BorderSizePixel = 0,
+						utility:Create("ImageLabel" , { BorderSizePixel=0,
 								Name = "Glow",
 								BackgroundTransparency = 0,
 								BackgroundColor3 = themes.Background,
@@ -217,8 +215,7 @@ do
 								Visible = false
 							}
 						),
-						utility:Create(
-							"ImageLabel",{ BorderSizePixel = 0,
+						utility:Create("ImageLabel" , { BorderSizePixel=0,
 								Name = "Pages",
 								BackgroundTransparency = 0,
 								BackgroundColor3 = themes.Background,
@@ -252,8 +249,7 @@ do
 								)
 							}
 						),
-						utility:Create(
-							"ImageLabel",{ BorderSizePixel = 0,
+						utility:Create("ImageLabel" , { BorderSizePixel=0,
 								Name = "TopBar",
 								BackgroundTransparency = 0,
 								BackgroundColor3 = themes.Accent,
@@ -332,8 +328,7 @@ do
 					}
 				),
 				icon and
-					utility:Create(
-						"ImageLabel",{ BorderSizePixel = 0,
+					utility:Create("ImageLabel" , { BorderSizePixel=0,
 							Name = "Icon",
 							AnchorPoint = Vector2.new(0, 0.5),
 							BackgroundTransparency = 0,
@@ -341,7 +336,6 @@ do
 							Position = UDim2.new(0, 12, 0.5, 0),
 							Size = UDim2.new(0, 16, 0, 16),
 							ZIndex = 3,
-							BorderSizePixel = 0,
 							Image = "",
 							ImageColor3 = themes.TextColor,
 							ImageTransparency = 0.64
@@ -372,8 +366,7 @@ do
 	end
 	function section.new(page, title)
 		local container =
-			utility:Create(
-			"ImageLabel",{ BorderSizePixel = 0,
+			utility:Create("ImageLabel" , { BorderSizePixel=0,
 				Name = title,
 				Parent = page.container,
 				BackgroundColor3 = themes.LightContrast,
@@ -487,8 +480,7 @@ do
 			self.activeNotification = self.activeNotification()
 		end
 		local notification =
-			utility:Create(
-			"ImageLabel",{ BorderSizePixel = 0,
+			utility:Create("ImageLabel" , { BorderSizePixel=0,
 				Name = "Notification",
 				Parent = self.container,
 				BackgroundTransparency = 1,
@@ -501,8 +493,7 @@ do
 				ClipsDescendants = true
 			},
 			{
-				utility:Create(
-					"ImageLabel",{ BorderSizePixel = 0,
+				utility:Create("ImageLabel" , { BorderSizePixel=0,
 						Name = "Flash",
 						Size = UDim2.new(1, 0, 1, 0),
 						BackgroundTransparency = 0,
@@ -512,8 +503,7 @@ do
 						ZIndex = 5
 					}
 				),
-				utility:Create(
-					"ImageLabel",{ BorderSizePixel = 0,
+				utility:Create("ImageLabel" , { BorderSizePixel=0,
 						Name = "Glow",
 						BackgroundTransparency = 0,
 						Position = UDim2.new(0, -15, 0, -15),
@@ -807,8 +797,7 @@ do
 						TextXAlignment = Enum.TextXAlignment.Left
 					}
 				),
-				utility:Create(
-					"ImageLabel",{ BorderSizePixel = 0,
+				utility:Create("ImageLabel" , { BorderSizePixel=0,
 						Name = "Button",
 						BackgroundTransparency = 0,
 						Position = UDim2.new(1, -110, 0.5, -8),
@@ -933,8 +922,7 @@ do
 						TextXAlignment = Enum.TextXAlignment.Left
 					}
 				),
-				utility:Create(
-					"ImageLabel",{ BorderSizePixel = 0,
+				utility:Create("ImageLabel" , { BorderSizePixel=0,
 						Name = "Button",
 						BackgroundTransparency = 0,
 						Position = UDim2.new(1, -110, 0.5, -8),
@@ -1597,8 +1585,7 @@ do
 						Text = ""
 					},
 					{
-						utility:Create(
-							"ImageLabel",{ BorderSizePixel = 0,
+						utility:Create("ImageLabel" , { BorderSizePixel=0,
 								Name = "Bar",
 								AnchorPoint = Vector2.new(0, 0.5),
 								BackgroundTransparency = 0,
@@ -1612,8 +1599,7 @@ do
 								SliceCenter = Rect.new(2, 2, 298, 298)
 							},
 							{
-								utility:Create(
-									"ImageLabel",{ BorderSizePixel = 0,
+								utility:Create("ImageLabel" , { BorderSizePixel=0,
 										Name = "Fill",
 										BackgroundTransparency = 0,
 										Size = UDim2.new(0.8, 0, 1, 0),
@@ -1625,8 +1611,7 @@ do
 										SliceCenter = Rect.new(2, 2, 298, 298)
 									},
 									{
-										utility:Create(
-											"ImageLabel",{ BorderSizePixel = 0,
+										utility:Create("ImageLabel" , { BorderSizePixel=0,
 												Name = "Circle",
 												AnchorPoint = Vector2.new(0.5, 0.5),
 												BackgroundTransparency = 0,
@@ -1716,8 +1701,7 @@ do
 			},
 			{
 				utility:Create("UIListLayout", {SortOrder = Enum.SortOrder.LayoutOrder, Padding = UDim.new(0, 4)}),
-				utility:Create(
-					"ImageLabel",{ BorderSizePixel = 0,
+				utility:Create("ImageLabel" , { BorderSizePixel=0,
 						Name = "Search",
 						BackgroundTransparency = 0,
 						BorderSizePixel = 0,
@@ -1765,8 +1749,7 @@ do
 						)
 					}
 				),
-				utility:Create(
-					"ImageLabel",{ BorderSizePixel = 0,
+				utility:Create("ImageLabel" , { BorderSizePixel=0,
 						Name = "List",
 						BackgroundTransparency = 0,
 						BorderSizePixel = 0,
